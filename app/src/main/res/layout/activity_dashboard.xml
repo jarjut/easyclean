@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.easyclean.easyclean.MainActivity">
+    tools:context="com.easyclean.easyclean.DashboardActivity">
 
     <LinearLayout
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/logoSplash"
-            android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/logoeasyclean"/>
-
+            android:text="DASHBOARD"
+            android:gravity="center"
+            android:textSize="50sp"/>
     </LinearLayout>
+
 
 </RelativeLayout>
