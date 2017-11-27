@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "990974075055",
+    "firebase_url": "https://easyclean-mobtek.firebaseio.com",
+    "project_id": "easyclean-mobtek",
+    "storage_bucket": "easyclean-mobtek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990974075055:android:eaffd7a799c3339f",
+        "android_client_info": {
+          "package_name": "com.easyclean.easyclean"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990974075055-rujbc3901grbkcmg6f4e7mfcipeb2cmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqXPANOZXbZaqmzNFuJRFz0VQ85oHmZKg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
