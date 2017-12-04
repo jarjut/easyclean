@@ -1,15 +1,19 @@
 package com.easyclean.easyclean;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -46,13 +50,18 @@ public class RegisterActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // disable going back to the MainActivity
         moveTaskToBack(true);
     }
 
     public void onClick(View v){
         if (v.getId() == R.id.btn_register){
-            registerUser(inputEmail.getText().toString(), inputPassword.getText().toString());
+            String email = inputEmail.getText().toString().trim();
+            String password = inputPassword.getText().toString().trim();
+            if (TextUtils.isEmpty(email)||TextUtils.isEmpty(password)){
+                Toast.makeText(getApplicationContext(), "Please enter required field", Toast.LENGTH_SHORT).show();
+            }else{
+                registerUser(email, password);
+            }
         }else if(v.getId() == R.id.link_login){
             Intent intent = new Intent (this, LoginActivity.class);
             startActivity(intent);
@@ -68,12 +77,11 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(!task.isSuccessful())
                         {
-                            snackbar = Snackbar.make(activityRegister, "Error: "+task.getException(), Snackbar.LENGTH_SHORT);
-                            snackbar.show();
+                            Toast.makeText(getApplicationContext(), "Register Failed", Toast.LENGTH_SHORT).show();
                         }
                         else{
-                            snackbar = Snackbar.make(activityRegister, "Register Success", Snackbar.LENGTH_SHORT);
-                            snackbar.show();
+                            Toast.makeText(getApplicationContext(), "Register Success", Toast.LENGTH_SHORT).show();
+
                             Intent intent = new Intent (RegisterActivity.this, LoginActivity.class);
                             startActivity(intent);
                             finish();

@@ -5,6 +5,7 @@
     android:fitsSystemWindows="true">
 
     <LinearLayout
+        android:id="@+id/activity_login"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,7 +62,7 @@
             android:onClick="onClick"
             android:text="No account yet? Create one"
             android:gravity="center"
-            android:textSize="16dip"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 </ScrollView>
