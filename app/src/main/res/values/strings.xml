@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Easy Clean</string>
+    <string name="google_maps_key">AIzaSyDRCRVWK-b6DSAEkZYB2wEKVBO3GRNL3v8</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
@@ -24,7 +25,7 @@
     <string name="order_now">ORDER NOW</string>
     <string name="service_type">Service Type</string>
     <string name="regular">Regular</string>
-    <string name="regular_days">3-5 Days</string>
+    <string name="regular_days">3 Days</string>
     <string name="express">Express</string>
     <string name="express_days">1 Days</string>
     <string name="decreaseIcon">-</string>
@@ -37,4 +38,12 @@
     <string name="total_currency">IDR </string>
     <string name="back">BACK</string>
     <string name="next">NEXT</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="address">Address</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="delivery">Delivery</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="service">Service</string>
+    <string name="service_list">Service List</string>
 </resources>

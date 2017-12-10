@@ -30,6 +30,11 @@ public class DashboardActivity extends AppCompatActivity {
         buttonContinue = findViewById(R.id.button_continue);
     }
     @Override
+    public void onBackPressed() {
+
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;

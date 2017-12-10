@@ -34,7 +34,8 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:checkedButton="@id/radio_regular">
 
             <RadioButton
                 android:id="@+id/radio_regular"
@@ -271,6 +272,7 @@
                 android:fontFamily="@font/comfortaa_font"
                 android:textSize="20sp"/>
             <TextView
+                android:id="@+id/total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/zero"
@@ -286,6 +288,7 @@
         android:layout_height="wrap_content"
         android:padding="12dp">
         <Button
+            android:id="@+id/button_back"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
@@ -293,9 +296,11 @@
             android:paddingEnd="12dp"
             android:paddingStart="12dp"
             android:text="@string/back"
+            android:onClick="onClick"
             android:fontFamily="@font/comfortaa_font"
             android:textColor="@android:color/white"/>
         <Button
+            android:id="@+id/button_next"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
@@ -303,6 +308,7 @@
             android:paddingEnd="12dp"
             android:paddingStart="12dp"
             android:text="@string/next"
+            android:onClick="onClick"
             android:fontFamily="@font/comfortaa_font"
             android:textColor="@android:color/white"/>
     </RelativeLayout>
