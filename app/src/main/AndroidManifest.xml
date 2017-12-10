@@ -9,9 +9,7 @@
         android:roundIcon="@drawable/iconeasyclean"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppNoActionBarTheme">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +19,10 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile" />
+        <activity android:name=".OrderActivity"></activity>
     </application>
 
 </manifest>

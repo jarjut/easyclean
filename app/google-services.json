@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "990974075055-grb963d7mjt16f72cu7nvsphj6qpdkpq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easyclean.easyclean",
+            "certificate_hash": "ac8526074e1b9de0f98ae24494f70deaba221211"
+          }
+        },
+        {
           "client_id": "990974075055-rujbc3901grbkcmg6f4e7mfcipeb2cmd.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990974075055-rujbc3901grbkcmg6f4e7mfcipeb2cmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
