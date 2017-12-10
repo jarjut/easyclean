@@ -6,17 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.easyclean.easyclean.MainActivity">
 
-    <LinearLayout
-        android:gravity="center"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" />
 
-        <ImageView
-            android:id="@+id/logoSplash"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logoeasyclean"/>
+    <ImageView
+        android:id="@+id/logoSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splashscreen" />
 
-    </LinearLayout>
+
+
 
 </RelativeLayout>
