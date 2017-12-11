@@ -21,6 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     EditText inputName;
     EditText inputHandphone;
+    EditText inputEmail;
     Button buttonContine;
 
     private FirebaseAuth mAuth;
@@ -38,18 +39,23 @@ public class ProfileActivity extends AppCompatActivity {
 
         inputName = findViewById(R.id.input_name);
         inputHandphone = findViewById(R.id.input_handphone);
+        inputEmail = findViewById(R.id.input_email);
         buttonContine = findViewById(R.id.button_continue);
 
         mAuth = FirebaseAuth.getInstance();
+
 
         if(mAuth.getCurrentUser() == null){
             finish();
             startActivity(new Intent(this, LoginActivity.class));
         }
 
+
         userReference = FirebaseDatabase.getInstance().getReference("Users");
 
         user = mAuth.getCurrentUser();
+
+        inputEmail.setText(user.getEmail());
     }
 
     @Override
@@ -99,5 +105,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         UserProfile userprofile = new UserProfile(uid, name, handphone);
         userReference.child(uid).setValue(userprofile);
+        finish();
+        startActivity(new Intent(this, DashboardActivity.class));
     }
 }
