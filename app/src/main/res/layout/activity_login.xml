@@ -16,49 +16,57 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
 
-        <ImageView android:src="@drawable/iconeasyclean"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="220dp"
             android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="24dp"
-            android:layout_gravity="center_horizontal" />
+            android:src="@drawable/easycleanorange" />
 
         <!-- Email Label -->
         <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_email"
-                android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="346dp"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
 
         <!-- Password Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_password"
-                android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="40dp">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Password"/>
+                android:hint="Password"
+                android:inputType="textPassword" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_login"
-            android:layout_width="fill_parent"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedbutton"
             android:onClick="onClick"
             android:padding="12dp"
             android:text="@string/login"
-            android:textColor="@android:color/white"
-            android:background="@drawable/roundedbutton"/>
+            android:textColor="@android:color/white" />
 
         <TextView android:id="@+id/link_register"
             android:layout_width="fill_parent"
@@ -68,7 +76,7 @@
             android:text="@string/link_register"
             android:fontFamily="@font/comfortaa_regular"
             android:gravity="center"
-            android:textSize="16sp"/>
+            android:textSize="13sp"/>
 
     </LinearLayout>
 </ScrollView>
